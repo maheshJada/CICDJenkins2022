@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 var app = builder.Build();
+
 // 2. Find the service within the scope to use
 using (var scope = app.Services.CreateScope())
 {
