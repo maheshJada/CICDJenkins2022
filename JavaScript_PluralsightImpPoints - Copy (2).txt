@@ -1,0 +1,1557 @@
+s""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""JavaScript"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+<strong>going</strong>   this is for bold tag
+
+<a href="http://microsoft.com">where</a>    this is for the attribute for navigating purpose we use the link
+
+<ol> or<ul> is used for ordered or else orderd with dot  with name
+
+<li> is used for the list format
+
+<div>   block display idea aroud it similar product we have to show we use sort of reusable element in our html
+
+<img />
+
+<img  src=""/>   this is for source file
+
+ <div>
+        <img src="img/New Doc 2021-02-26 13.08.44_4.jpg" />
+ </div>
+
+<form>  it is used to get the information from the user readonly to collect like backend information
+
+<input>
+
+<textarea rows="4"></textarea>  this is work like up and down browser work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""css""""""""""""""""""""""""""""""""" 
+  style="----------" it is for style attribute
+  <style/>           it is for style blocks
+  style.css          it is for style sheets
+
+
+        <input type="email"  style="font-size:18px" width:"200px"; />
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>the below one u can write witin the page as will as make sure that don't write in Body tag
+
+
+
+ <style>
+        input {
+            font-size:18px; 
+            width:200px;
+        }
+    </style>
+
+
+ <style>
+        input,textarea {
+            font-size:18px; 
+            width:200px;
+        }
+    </style>
+
+
+
+ <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        input,textarea {
+            font-size:18px; 
+            width:200px;
+        }
+        label {
+            font-size: 16px;
+        }
+    </style>
+
+
+the above one we can write in css.html
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+=============================================================================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+</head>
+<body>
+    <h1>Dutch Treat</h1>
+    <p>This is <strong>going</strong> to be a site<a href="http://microsoft.com">where</a>we  buy dutch artists merchandise</p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</body>
+</html>
+
+======================================================================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+</head>
+<body>
+    <h2>Dutch Treat</h2>
+    <div>
+        <img src="img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul>
+            <li>Company:Innominds SoftWare Pvt Ltd </li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button>View the Location of Innominds </button>
+    </div>
+   <form>
+
+   </form>
+</body>
+</html>
+=======================================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+</head>
+<body>
+    <h2>Dutch Treat</h2>
+    <div>
+        <img src="img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul>
+            <li>Company:Innominds SoftWare Pvt Ltd </li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button>View the Location of Innominds </button>
+    </div>
+    <form>
+        <label>Your Name:</label>
+        <input />
+        <br>
+        <label> Email:</label>
+        <input type="email" />
+        <br>
+        <label>Subject:</label>
+        <input type="text" />
+        <br>
+        <label>Message:</label>
+        <br>
+        <textarea rows="4"></textarea>
+        <br />
+        <input type="submit"  value="Send Message"/>
+        <br />
+    </form>
+</body>
+</html>
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[Both Css and html}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        input,textarea {
+            font-size:18px; 
+            width:200px;
+        }
+        label {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dutch Treat</h2>
+    <div>
+        <img src="img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul>
+            <li>Company:Innominds SoftWare Pvt Ltd </li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button>View the Location of Innominds </button>
+    </div>
+    <form>
+        <label>Your Name:</label>
+        <br>
+        <input />
+        <br>
+        <label> Email:</label>
+        <br>
+        <input type="email" />
+        <br>
+        <label>Subject:</label>
+        <br>
+        <input type="text" />
+        <br>
+        <label>Message:</label>
+        <br>
+        <textarea rows="4"></textarea>
+        <br />
+        <input type="submit" value="Send Message" />
+        <br />
+    </form>
+</body>
+</html>
+======================================================================================
+""""""""""""""""""""""""""""""""""css"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imp Points to remember:::::::::::::::
+
+<div id="">   this is for the identity if we have more identity then we go for the Class
+Class are denoted in css as Dot(.)with Class name attribute
+
+
+
+
+
+
+
+
+style.css
+
+and u can drag and drop in index .html and that tag is
+
+as fallows...
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+label {
+    font-size: 16px;
+}
+;;;;;;;;;;;;;;;;;;;;;;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input[type=submit] {
+    width: auto
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+label {
+    font-size: 16px;
+}
+
+;;;;;;;;;;;;;;;;;;;;;;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input[type=submit] {
+    width: auto
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+label {
+    font-size: 16px;
+}
+#the-form{
+    background-color:burlywood;
+}
+div{
+    background-color:khaki
+}
+#the-form input[type=submit]{
+    background-color:cadetblue
+}
+\\\\\<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat</title>
+
+    <link href="css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Dutch Treat</h2>
+    <div>
+        <img src="img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul class="Product-Props">
+            <li>Company:Innominds SoftWare Pvt Ltd </li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button>View the Location of Innominds </button>
+    </div>
+    <div id="the-form">
+        <form>
+            <label>Your Name:</label>
+            <br>
+            <input />
+            <br>
+            <label> Email:</label>
+            <br>
+            <input type="email" />
+            <br>
+            <label>Subject:</label>
+            <br>
+            <input type="text" />
+            <br>
+            <label>Message:</label>
+            <br>
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+            <br />
+        </form>
+    </div>
+</body>
+</html>
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''Box Model''''''''''''''''''''''''''''
+The Box model will have Both Padding and Content
+[]
+
+>>>>>>>>Margin
+>>>>>boarder
+>>>padding
+>>Content
+>>>>padding
+>>>>>boarder
+>>>>>>>Margin
+
+if u r givving padding is like Padding:5px 2px  5px as top and bottom and 2 px as left right
+					5px 2px 4px 8px
+
+.Product-info{
+    border:1px solid red;
+    display:inline block;
+    padding:20px 10px ;
+    margin:8px;
+    width:450px;
+}
+.Product-info img{
+    margin:3px;
+    float:left
+}
+
+
+float wiil be given like photo with left as an matter
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""Javascript"""""""""""""""""""""""""""""""""""""""""""""""""
+
+html:
+
+ <script src="js/index.js"></script>
+
+javascript:
+
+alert("Hello Innominds")
+
+/*alert("Hello Innominds")*/
+var x = 0;
+var s = "";
+console.log("Hello Innomids")
+var theform = document.getElementById("theform")
+theform.hidd = true;
+
+.../*alert("Hello Innominds")*/
+var x = 0;
+var s = "";
+console.log("Hello Innomids")
+var theform = document.getElementById("theform")
+theform.hidd = true;
+var button = document.getElementById("ViewDetails");
+button.addEventListener("click", function () {
+    alert("View the Data");
+});
+var Productinfo = document.getElementsByClassName("ProductProps");
+var listItems = Productinfo.item[0].children;
+
+
+if u want libman go to manage clentside json i, we use this client side library
+libman.json
+providers unpkg
+ choose specific file and click dist folder
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""jQuery"""""""""""""""""""""""""""""""""'
+
+jquery mostely used in Api's and its is implemnted by using $(doller) symbol
+insted of jquery syntax we use $ sign
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat</title>
+
+    <link href="css/Style.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <h2>Dutch Treat</h2>
+
+    <div class="Productinfo">
+        <img src="img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul class="ProductProps">
+            <li>Company:Innominds SoftWare Pvt Ltd  hyderabad</li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button id="ViewDetails">View Details</button>
+    </div>
+
+    <div id="theform">
+        <form>
+            <label>Your Name:</label>
+            <br>
+            <input />
+            <br>
+            <label> Email:</label>
+            <br>
+            <input type="email" />
+            <br>
+            <label>Subject:</label>
+            <br>
+            <input type="text" />
+            <br>
+            <label>Message:</label>
+            <br>
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+            <br />
+        </form>
+    </div>
+
+    <div>
+        <div id="loginToggle">Login</div>
+        <form class="popup-form">
+            <div>
+                <label>Username</label>
+                <input />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" />
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>Remember Me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Login"/>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input[type=submit] {
+    width: auto
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
+
+label {
+    font-size: 16px;
+}
+#theform{
+    background-color:burlywood;
+}
+div{
+    background-color:khaki;
+}
+#theform input[type=submit]{
+    background-color:cadetblue;
+}
+ul.ProductProps {
+    font-size:small;
+}
+ul.ProductProps li {
+    list-style-type:none;
+}
+.Productinfo{
+    border:1px solid red;
+    display:inline block;
+    padding:8px 2px ;
+    margin:8px;
+    width:450px;
+    background-color:lightblue
+}
+.Productinfo img{
+    margin:3px;
+    float:left;
+    border:1px solid black;
+    max-width:150px;
+}
+#loginToggle{
+    cursor:pointer;
+}
+.ProductProps{
+    padding:5px;
+    border:2px black outset;
+    display:inline-block;
+}
+.popup-form label{
+    width:150px;
+    display:inline-block;
+}
+
+.popup-form input[type=checkbox],.popup-form input[type=submit]{
+    width:auto;
+}
+   
+
+/*alert("Hello Innominds")*/
+$(document).ready(function () {
+var x = 0;
+var s = "";
+console.log("Hello Innomids")
+
+
+
+
+/*var theform = document.getElementById("theform")*/
+var theform = $("#theform")
+theform.hide();
+var button = $("#ViewDetails");
+button.on("click", function () {
+    alert("View the Data");
+});
+
+var Productinfo = $(".ProductProps li");
+Productinfo.on("click", function () {
+
+    console.log("you clicked on" + $(this).text());
+});
+
+    var $loginToggle = $("#$loginToggle")
+    var $popupform = $(".popup-form");
+    $loginToggle.on("click", function () {
+        $popupform.slideToggle();
+    });
+   
+});
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""Mvc""""""""""""""""""""""""""""""""
+>>>>>>>>>>>>>>>>>>>>create controllers
+>>>>>>>>>>>>>>>>>Creating views and layout
+>>>>>>>>>>>>>>>using model validation
+>>>>>>>>>>>>>>>tag helpers
+serverside mvc framework
+
+here we use razor page for view purpose thar is index.cshtml
+in index.cshtml we use <link href="-----"in css we use ~/ and we use viewbag as well
+@{
+    ViewBag.Title = "Home Page";
+}
+    <div class="Productinfo">
+        <img src="~/img/WaveRock.jpg" />
+        <h3>WaveRock</h3>
+        <ul class="ProductProps">
+            <li>Company:Innominds SoftWare Pvt Ltd  hyderabad</li>
+            <li>Emloyee Name:Mahesh Jada</li>
+            <li>EmpId:10645 </li>
+            <li>Designation:SoftWare Trainee </li>
+        </ul>
+        <button id="ViewDetails">View Details</button>
+    </div>
+
+    <div id="theform">
+        <form>
+            <label>Your Name:</label>
+            <br>
+            <input />
+            <br>
+            <label> Email:</label>
+            <br>
+            <input type="email" />
+            <br>
+            <label>Subject:</label>
+            <br>
+            <input type="text" />
+            <br>
+            <label>Message:</label>
+            <br>
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+            <br />
+        </form>
+    </div>
+
+    <div>
+        <div id="loginToggle">Login</div>
+        <form class="popup-form">
+            <div>
+                <label>Username</label>
+                <input />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" />
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>Remember Me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Login" />
+            </div>
+        </form>
+    </div>
+
+Layout.cshtml
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat Site:@ViewBag.Title</title>
+
+    <link href="~/css/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>Welcome to Dutch Treat</header>
+    <section>
+        <h2>@ViewBag.Title</h2>
+        @RenderBody()
+    </section>
+    <footer>Copyright 2022 Dutch Treat LLC</footer>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+</body>
+</html>
+
+@{
+    Layout = "_Layout";
+}
+
+...................
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DutchTreat
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            //stagging developing testing
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseEndpoints(cfg =>
+            {
+                cfg.MapControllerRoute("Default"
+                    , "/{controller}/{action}/{id?}",
+                   new { controller = "App", action = "Index" });
+            });
+             
+        }
+    }
+}
+
+
+....viewimport.cshtml
+@using DutchTreat.Controllers
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+
+
+..._layout.cshtml for navigating purpose in mvc we used
+...<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat Site:@ViewBag.Title</title>
+
+    <link href="~/css/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dutch Treat</h1>
+        <menu>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/app/Contact">Contact</a></li>
+                <li><a href="/app/About">About</a></li>
+            </ul>
+        </menu>
+    </header>
+        <section>
+            <h2>@ViewBag.Title</h2>
+            @RenderBody()
+        </section>
+    
+    <footer>Copyright 2022 Dutch Treat LLC</footer>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+</body>
+</html>
+
+
+"""""""""""""""""""""""""""""""""""""""""Razor Pages""""""""""""""""""""""""""'
+
+
+@{ 
+    ViewBag.Title = "Contact US";
+}
+<form method="post">
+    <label>Your Name:</label>
+    <br>
+    <input name="name" />
+    <br>
+    <label> Email:</label>
+    <br>
+    <input type="email" name="email" />
+    <br>
+    <label>Subject:</label>
+    <br>
+    <input type="text" / name="subject">
+    <br>
+    <label>Message:</label>
+    <br>
+    <textarea rows="4" name="message"></textarea>
+    <br />
+    <input type="submit" value="Send Message" />
+    <br />
+</form>
+
+
+
+@using DutchTreat.Controllers
+@using DutchTreat.ViewModels
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+
+
+
+Mvc_Validation:::::::::::
+
+
+After that in contact.cshtml iu can use span for the validation and as well as
+ u can use the j qery librry in the client side
+ jquery:jquery validation
+	jquery validation unbtrusive
+
+after that in layout.cshtml we use render section for jqury validation
+
+
+
+
+using DutchTreat.Services;
+using DutchTreat.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DutchTreat.Controllers
+{
+    public class AppController : Controller
+    {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            _mailService = mailService;
+        }
+        public IActionResult Index()
+        {
+            //throw new InvalidProgramException("Bad things happen a good developers");
+            return View();
+        }
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            ViewBag.Title = "contact Us";
+            //throw new InvalidOperationException("Bad things happend");
+            return View();
+        }
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //Send the Email
+                _mailService.SendMessage("mjada@oinnominds.com",model.Subject ,$"From:{model.Name} - {model.Email},Message:{model.Message}");
+                ViewBag.UserMessage = "Mail Sent";
+                ModelState.Clear();
+            }
+            
+            return View();
+        }
+        public IActionResult About()
+        {
+            ViewBag.Title = "About Us";
+            return View();
+        }
+    }
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat Site:@ViewBag.Title</title>
+
+    <link href="~/css/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dutch Treat</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a  asp-controller="App" asp-action="Contact">Contact</a></li>
+                <li><a asp-controller="App" asp-action="About">About</a></li>
+            </ul>
+        </menu>
+    </header>
+        <section>
+            <h2>@ViewBag.Title</h2>
+            @RenderBody()
+        </section>
+    
+    <footer>Copyright 2022 Dutch Treat LLC</footer>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+
+    @RenderSection("Scripts", false)
+</body>
+</html>
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""Bootstarp"""""""""""""""""""""""""
+bootstarp:Mostely it is used for css javascript as well
+instead of css we use bootstrap for bettor voiew purpose
+in layout.cshtml has class name as container with fluid will act as a if we are take container as half 
+				but when u take fluid it will automatically generate whole color to that conatiner
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat Site:@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/Style.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <header class="container">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                <h1 class="navbar-brand">Welcome to Dutch Treat</h1>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#theMenu" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="theMenu" class="navbar-collapse collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" asp-controller="App" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a  class="nav-link" asp-controller="App" asp-action="Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                        <a  class="nav-link" asp-controller="App" asp-action="About">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+        <section class="container">
+            <h2>@ViewBag.Title</h2>
+            @RenderBody()
+        </section>
+    
+        <footer class="container">
+            <div class="text-center">Copyright 2022 Dutch Treat LLC</div>
+            </footer>
+
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+            <script src="~/js/index.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+            @RenderSection("Scripts", false)
+</body>
+</html>
+
+
+
+Bootstarp Grid System:12 colms grid divide/6
+
+.col-xl-xx:>=1200px===>systems
+.col-lg-xx:>=992px=====>laptap
+ .col.md.xx:>=768===>pad
+col.-sm-xx:<768px===>mobile
+cal
+
+
+
+font awasome like delete btn:client side library
+
+we use i tag
+
+                <h1 class="navbar-brand"><i class="fas fa-paint-brush  "></i>Welcome to Dutch Treat</h1>
+<i class="fab fa-twitter  ">
+<i class="fas fa-paint-brush fa-spin  
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""EntityFramework"""""""""""""""""
+efsql
+efcordesign
+pacage manage console:
+dotnet tool install dotnet-ef -g
+/\ dotnet ef database update
+
+Startup:
+
+
+using DutchTreat.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DutchTreat.Data
+{
+    public class DutchContext:DbContext
+    {
+        private readonly IConfiguration _config;
+        public DutchContext(IConfiguration config)
+        {
+            _config = config;
+        }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(_config["ConnectionStrings:DutchContextDb"]);
+        }
+       
+    }
+}
+
+
+Program.cs:
+
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DutchTreat
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration(AddConfiguration)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+
+        private static void AddConfiguration(HostBuilderContext ctx, IConfigurationBuilder bldr)
+        {
+            bldr.Sources.Clear();
+            bldr.SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("config.json")
+                .AddEnvironmentVariables();
+        }
+    }
+}
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Open develper command prompt
+set ASPNETCORE_ENVIRONMENT=DEVELOPMENT
+
+dotnet run
+
+Dotnet /seed
+
+
+if u get 500.031 then u install the dotnethosting 5.001
+
+dotnet run /seed
+""""'
+Mvc Newtonsoft json  => this is for if u get an circular data then u can install ;like order will have orderitem and order item will have an order
+""
+[HttpGet("{id:int}")]
+
+
+
+"""""""""""""""""""""""""""""""""""""'
+OrderViewModel is used for the mapping
+
+
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using DutchTreat.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using DutchTreat.Data.Entities;
+using DutchTreat.ViewModels;
+
+namespace DutchTreat.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OrdersController : ControllerBase
+    {
+        private readonly IDutchRepository _repository;
+        private readonly ILogger<OrdersController> _logger;
+
+        public OrdersController(IDutchRepository repository,ILogger<OrdersController> logger)
+        {
+            _repository = repository;
+            _logger = logger;
+        }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                return  Ok( _repository.GetAllOrders());
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Failed to get Orders:{ex}");
+                return BadRequest("Failed to get orders");
+            }
+        }
+        [HttpGet("{id:int}")]
+        public IActionResult Get(int id)
+        {
+            try
+            {
+                var order = _repository.GetOrderById(id);
+                if (order != null)
+                    return Ok(order);
+                else
+                    return NotFound();
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Failed to get Orders:{ex}");
+                return BadRequest("Failed to get orders");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody]OrderViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var newOrder = new Order()
+                    {
+                        OrderDate = model.OrderDate,
+                        OrderNumber = model.OrderNumber,
+                        Id = model.OrderId
+                    };
+
+                    if(newOrder.OrderDate==DateTime.MinValue)
+                    {
+                        newOrder.OrderDate = DateTime.Now;
+                    }
+                    _repository.AddEntity(newOrder);
+
+                    if (_repository.SaveAll())
+                    {
+                        var vm = new OrderViewModel()
+                        {
+                            OrderId = newOrder.Id,
+                            OrderDate = newOrder.OrderDate,
+                            OrderNumber = newOrder.OrderNumber
+                        };
+
+                        return Created($"/api/orders/{vm.OrderId}", vm);
+                    }
+                }
+                else
+                {
+                    return BadRequest("");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Failed to Save New Orders:{ex}");
+            }
+            return BadRequest("Failed to Save New Orders:");
+        }
+    }
+}
+
+
+
+""""""""""""Mapping"""""""""""""""""""""""""""""'
+to Reduce the lot of code we use Mappings
+
+
+
+"Includeitems means Only What u want to get reqired data that is oly available items{}"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""Asp net Core Identity""""""""""""""""""""""""""""""""""""""""""
+
+using authorize attribute
+Configure identity
+Storing Identity with Efc
+using identy using api
+It supports the More types of authentication=>cookies,OAuth2
+user entity
+Authorizing Actions
+
+dotnet ef migrations add Identity
+dotnet ef database drop
+
+
+
+"Cookies
+
+
+We use different type techniques for secure we use this
+	.Open Id,OAuth2 or Jwt Tokens are best
+
+
+when u put an jwt u open shop.cshtml but it will given like login data so
+at that timewe use this in controller
+best example is venu program in that startup like this way...
+ services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+
+
+if u r doing login we use in the method passowdsigninasyn for getting cookies
+but u r do in api login we use checkpasswordsigninasync
+
+Claimes:
+it as set of propr we can use for well known values like we can store in the token
+	use by clianback to serversecurity claimne and it as type and value
+jti =>unique string for represent token Guid new guid
+uniquname,username every controller 
+
+In jwt we use configarion foe accessing the key in claim part
+""""""""""""""""""""""""""""""""""""""""""''
+
+
+
+
+testing
+
+
+
+
+
+
+
+
+
+https://app.pluralsight.com/guides/testing-asp-net-core-applications-the-cross-platform-developer-experience
+"""""""""""""""""""""""""""""""""""""""""""	
+
+
+Key must be an max length
+created(4 parameters);
+
+if u get an token even though getting an token u did nort get order details then see the startup add tpo service layer code
+
+
+"""""""""""""""""""""""""""""""TypeScript""""""""""""""""""""""""""""""""
+To do in angular apps
+it wiil have classes and 
+typescript is a subset of javascript
+
+"""""
+
+class Shopper {
+    firstname = "";
+    lastname = "";
+    constructor(first: string, last: string) {
+        this.firstname = first;
+        this.lastname = last;
+    }
+    showName() {
+        alert('${ this.firstname }${this.lastname}');
+    }
+}
+"'''
+class Shopper {
+  
+    constructor(private firstName:string, private lastName:string) {
+     
+    }
+    showName() {
+        alert( this.firstName +" "+this.lastName);
+    }
+}
+
+
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""ANGULAR""""""""""""""""""""""""""""""""""""""'
+Install angular
+using Angular-Cli
+integrating with asp.net core
+using external templates
+creating components
+
+'''''SPA'''''Angular is a single page application
+Angularjs
+Open source for javascript framework
+basic app service like  writing compnents, dealing with dependencies,Creating services
+
+
+
+How To install:
+1.Chech node or note i.e node --version
+2.npm --version to instal angular cli
+3.npm install @angular/cli -g   this is for on the machine and this for updateing angular version like 15.77 then u can install this to get nuget packages
+4.ng --version chech once whether it is installed or not
+ to type ng and u will get a number of commands that u want to use in future
+
+Create a new projetc
+;;;;;;;ng new --help u will get more options
+1.ng new client --skip-tests --minimal --defaults --dry-run
+2.ng new client --skip-tests --minimal --defaults
+3.C:\Users\mjada\Desktop\ImpTopics\DutchTreat>cd client next enter then directecly enter to client folder
+next enter code .
+
+
+
+
+4.ng build
+5.ng serve  it is like same build proceess in additionn to that it will give an link to open the browser
+
+
+"""""""""""""""""""""""""""""""""""""""""""Integrating Asp.net core"""""""""""""""""""""""""""""""""""""""''
+in angular.json ===>    "outputPath": "../wwwroot/client",
+
+go to developer shell or console like cmd
+ng build
+
+For Automatic saving purpose we use the below command
+
+C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client>ng build --watch
+
+
+
+Go To shop page
+
+ <script src="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\polyfills.a151bed753c7da9d.js"></script>
+
+    <script src="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\runtime.01fec06f14767966.js"></script>
+    <link href="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\styles.ef46db3751d8e999.css" rel="stylesheet" />
+
+
+LAyout.cshtml
+
+  @RenderSection("head",false)
+
+
+
+shop:
+@model IEnumerable<Product>
+@section Scripts{
+    <script src="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\polyfills.a151bed753c7da9d.js"></script>
+
+    <script src="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\runtime.01fec06f14767966.js"></script>
+    <script src="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\main.6880061ec830d72e.js" asp-append-version="true"></script>
+
+    
+            }
+@section head{
+
+    <link href="C:\Users\mjada\Desktop\ImpTopics\DutchTreat\DutchTreat\client\dist\client\styles.ef46db3751d8e999.css" rel="stylesheet" />
+ }
+
+
+
+
+
+""""""""""""""""""""""""""""""''Services in Angular""""""""""""""""""""""""""""""""""""""""""'
+
+Creating service
+using the http stack
+using type safety in angular
+sharing data across components
+using cal data
+
+Crating service
+
+
+import { Component } from "@angular/core";
+
+@Component({
+    selector:"product-list",
+    templateUrl:"productListView.component.html"
+    })
+export default class productListView {
+    public products = [{
+        title: "History book",
+        price:"20.33"
+    }, {
+        title: "Science book",
+        price: "119.22"
+    }];
+}
+
+//
+
+For api calling we use httpclientmodele 
+
+to implement interface we use oninit
+
+Observable is a object it as doesnot knoow the type
+
+Subcribe will give success or error it will reback
+
+
+
+import { OnInit } from "@angular/core";
+import { Component } from "@angular/core";
+import { Store } from "../services/store.service";
+
+@Component({
+    selector:"product-list",
+    templateUrl:"productListView.component.html"
+})
+export default class productListView implements OnInit {
+    public products = [];
+    constructor(private store: Store) {
+        this.products = store.products;
+    }
+    ngOnInit(): void {
+        this.store.loadProducts()
+            .subscribe(); // <- kicks off the operation
+    }
+}
+
+
+instead of private we use public so that binding can be easy
+
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { map } from "rxjs/operators";
+
+@Injectable()
+export class Store {
+    constructor(private http: HttpClient) {
+
+    }
+    public products = [];
+    loadProducts() {
+        return this.http.get<[]>("api/products")
+            .pipe(map(data => {
+                this.products = data;
+                return;
+            }));
+    }
+
+
+}
+
+
+
+import { OnInit } from "@angular/core";
+import { Component } from "@angular/core";
+import { Store } from "../services/store.service";
+
+@Component({
+    selector:"product-list",
+    templateUrl:"productListView.component.html"
+})
+export default class productListView implements OnInit {
+
+    constructor(public store: Store) {
+     
+    }
+    ngOnInit(): void {
+        this.store.loadProducts()
+            .subscribe(); // <- kicks off the operation
+    }
+}
+
+
+
+
+call api we use  type safety
+
+
+
+To convert json format to type script we use this below link 
+It is used mostely for angular
+http://www.json2ts.com/
+
+
+Implementing template
+
+this is in c#
+ <li>Price:$@p.Price</li>
+                <li>Artist @p.Artist </li>
+                <li>Title: @p.Title</li>
+
+but in angulra type script we use {{}} we use double curly braces
+
+we use small case instead oc camel case
+
+For images in angular the ~ tilt symbole is not work
+
+For razor only the ~ is used
+
+without putting $ sign we use this {{p.price | currency}}
+
+
+Sharing data across the components:
+
+
+Ctrl+h it is for change the data
+
+
+""""""""""""""""""""""""""Angular Routing:::::::::::::::
+Addding Routing to the Projetc
+Create routes
+using tokens in angular
+use form binding
+ use validations
+
+App Routing in projetc
+
+
+if u want hash before the router use this...
+const router = RouterModule.forRoot(routes, {
+    useHash: true
+
+
+
+@Injectable()
+export class AuhtAcivator implements CanActivate {
+
+
+last to second vedio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

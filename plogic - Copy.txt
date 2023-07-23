@@ -1,0 +1,95 @@
+
+
+
+public string class reverse()
+{
+string result="";
+console.WriteLine("Enter the string do you want to reverse);
+string s=console.ReadLine();
+for(int i>=s.Length-1;i>0;i--)
+{
+	result=result+s[i];
+}
+return result;
+}
+
+
+
+Pulkit Chopra6:18 PM
+9910419924
+Pulkit Chopra6:21 PM
+// OUTPUT:: ABCD -> DCBA
+string reverse(string s, int length)
+{
+string result = "";
+for()
+{
+
+}
+return result;
+}
+Pulkit Chopra6:34 PM
+boxing and unboxing
+Pulkit Chopra6:35 PM
+10%
+original price is 72
+final price is 72
+disouc nct 10%
+what was the original price?
+Pulkit Chopra6:39 PM
+F= P - D
+Pulkit Chopra6:41 PM
+79.2
+79.2 - 2.92
+79.2 - 7.92
+Pulkit Chopra6:42 PM
+1000
+10%
+final ?
+f = p - p * d /100
+p ?
+Pulkit Chopra6:44 PM
+Statement : All the harmoniums are instruments. All instruments are flutes.
+
+Conclusion :
+I. All the flutes are instruments.
+II. All the harmoniums are flutes.
+A. Only I conclusion follows.
+
+B. Only II conclusion follows.
+
+C. Either I or II follows.
+
+D. Neither I nor II follows.
+
+E. Both I and II follows.
+Pulkit Chopra6:49 PM
+at slightly areas
+highere areas altituges
+altitiudes
+Pulkit Chopra6:50 PM
+how can you sell refirgerator 
+Pulkit Chopra6:51 PM
+fridge
+Pulkit Chopra6:58 PM
+hot chocolate suacued
+in middile year
+chnan
+;mumbua
+kereila
+Pulkit Chopra7:00 PM
+how
+Pulkit Chopra7:03 PM
+solid principles
+singleton
+clas
+Pulkit Chopra7:04 PM
+mutli level
+2 people  in 2 hours 
+4 chairs
+Pulkit Chopra7:05 PM
+4 people in 4 hours
+8
+Pulkit Chopra7:16 PM
+https://www.ambitionbox.com/salaries/logic-fruit-technologies-salaries#:~:text=Logic%20Fruit%20Technologies%20Salary%20FAQs&text=The%20average%20Logic%20Fruit%20Technologies,employees%20of%20Logic%20Fruit%20Technologies.
+6-20

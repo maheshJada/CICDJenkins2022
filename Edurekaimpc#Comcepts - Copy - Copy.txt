@@ -1,0 +1,579 @@
+"""""
+ENCAPSULATION USING ACCESSORS AND MUTATORS
+Let us see an example of Department class. To manipulate the data in that class (String departname) we define an accessor (get method) and mutator (set method).
+
+using system;  
+public class Department {  
+    private string departname;.......  
+    // Accessor.  
+    public string GetDepartname() {  
+        return departname;  
+    }  
+    // Mutator.  
+    public void SetDepartname(string a) {  
+        departname = a;  
+    }  
+}  
+Like the above way we can protect the private data from the outside world. Here we use two separate methods to assign and get the required data.
+
+public static int Main(string[] args) {  
+    Department d = new Department();  
+    d.SetDepartname("ELECTRONICS");  
+    Console.WriteLine("The Department is :" + d.GetDepartname());  
+    return 0;  
+}  
+
+
+
+
+
+////prope
+using system;  
+public class Department {  
+    private string departname;  
+    public string Departname {  
+        get {  
+            return departname;  
+        }  
+        set {  
+            departname = value;  
+        }  
+    }  
+}  
+public class Departmentmain {  
+    public static int Main(string[] args) {  
+        Department d = new Department();  
+        d.departname = "Communication";  
+        Console.WriteLine("The Department is :{0}", d.Departname);  
+        return 0;  
+    }  
+}  
+
+
+//Read only like parametarized constructor
+
+READ ONLY PROPERTY
+using system;  
+public class ReadDepartment {  
+    private string departname;  
+    public ReadDepartment(string avalue) {  
+        departname = avalue;  
+    }  
+    public string Departname {  
+        get {  
+            return departname;  
+        }  
+    }  
+}  
+public class ReadDepartmain {  
+    public static int Main(string[] args) {  
+        ReadDepartment d = new ReadDepartment("COMPUTERSCIENCE");  
+        Console.WriteLine("The Department is: {0}", d.Departname);  
+        return 0;  
+    }  
+}  
+
+
+
+using system;  
+public class WriteDepartment {  
+    private string departname;  
+    public string Departname {  
+        set {  
+            departname = value;  
+            Console.WriteLine("The Department is :{0}", departname);  
+        }  
+    }  
+}  
+public class WriteDepartmain {  
+    public static int Main(string[] args) {  
+        WriteDepartment d = new WriteDepartment();  
+        d.departname = "COMPUTERSCIENCE";  
+        return 0;  
+    }  
+} 
+
+
+
+
+
+
+Protected::::
+using System;
+
+namespace Tutlane
+{
+    class User
+    {
+        protected string Name;
+        protected string Location;
+        protected int Age;
+        protected void GetUserDetails()
+        {
+           Console.WriteLine("Name: {0}", Name);
+           Console.WriteLine("Location: {0}", Location);
+           Console.WriteLine("Age: {0}", Age);
+        }
+    }
+    class Program: User
+    {
+        static void Main(string[] args)
+        {
+           //User u = new User();
+           Program p = new Program();
+           // Complier Error
+           // protected members can only accessible with derived classes
+           //u.Name = "Suresh Dasari";
+           p.Name = "Suresh Dasari";
+           p.Location = "Hyderabad";
+           p.Age = 32;
+           p.GetUserDetails();
+           Console.WriteLine("\nPress Enter Key to Exit..");
+           Console.ReadLine();
+        }
+    }
+}
+
+===>Here we can create the object for the derived class and when u r usinhg protected members we use this concept
+
+
+https://www.tutlane.com/tutorial/csharp/csharp-access-modifiers-public-private-protected-internal#:~:text=In%20c%23%2C%20the%20protected%20modifier,or%20in%20a%20derived%20cla
+
+
+
+using System;
+ 
+// Sealed class
+sealed class SealedClass {
+ 
+    // Calling Function
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
+ 
+class Program {
+ 
+    // Main Method
+    static void Main(string[] args)
+    {
+ 
+        // Creating an object of Sealed Class
+        SealedClass slc = new SealedClass();
+ 
+        // Performing Addition operation
+        int total = slc.Add(6, 4);
+        Console.WriteLine("Total = " + total.ToString());
+    }
+}
+
+
+
+using System;
+ 
+class Bird {
+ 
+}
+ 
+// Creating a sealed class
+sealed class Test : Bird {
+}
+ 
+// Inheriting the Sealed Class
+class Example : Test {
+}
+ 
+// Driver Class
+class Program {
+ 
+    // Main Method
+    static void Main()
+    {
+    }
+}
+Error:
+
+Error CS0509 ‘Example’ : cannot derive from sealed type ‘Test’
+
+
+
+
+
+using System;
+ 
+class Printer {
+
+    public virtual void show()
+    {
+        Console.WriteLine("display dimension : 6*6");
+    }
+ 
+    public virtual void print()
+    {
+        Console.WriteLine("printer printing....\n");
+    }
+}
+ 
+class LaserJet : Printer {
+ 
+    sealed override public void show()
+    {
+        Console.WriteLine("display dimension : 12*12");
+    }
+ 
+   override public void print()
+    {
+        Console.WriteLine("Laserjet printer printing....\n");
+    }
+}
+ 
+class Officejet : LaserJet {
+ 
+    override public void print()
+    {
+        Console.WriteLine("Officejet printer printing....");
+    }
+}
+ 
+class Program {
+ 
+    
+    static void Main(string[] args)
+    {
+        Printer p = new Printer();
+        p.show();
+        p.print();
+ 
+        Printer ls = new LaserJet();
+        ls.show();
+        ls.print();
+ 
+        Printer of = new Officejet();
+        of.show();
+        of.print();
+    }
+}
+
+
+Output:
+
+
+		display dimension : 6*6
+printer printing....
+
+display dimension : 12*12
+Laserjet printer printing....
+
+display dimension : 12*12
+Officejet printer printing....
+
+
+
+Abstarct class and methods:
+
+ In abstraction can be acheived by abstaction class,methods and interface
+ here in abstarct class we can hide the data and we can not create object for the abstarct class if u want
+   u can create object for inherited class
+  and abstarct() will have no body that can be achieved by ploymorphism this is done by overridr runtime ployemorphism
+    with same method name
+
+using System;
+
+namespace MyApplication
+{
+  // Abstract class
+  abstract class Animal
+  {
+    // Abstract method (does not have a body)
+    public abstract void animalSound();
+    // Regular method
+    public void sleep()
+    {
+      Console.WriteLine("Zzz");
+    }
+  }
+  
+  // Derived class (inherit from Animal)
+  class Pig : Animal
+  {
+    public override void animalSound()
+    {
+      // The body of animalSound() is provided here
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Pig myPig = new Pig();  // Create a Pig object
+      myPig.animalSound();
+      myPig.sleep();
+    }
+  }
+} 
+
+Abstarct() Doesnot accept the Virtula keyword it will support override inn derivred class
+
+Abstarct class doesnot accept the static keyword and sealked keyword
+
+inner abstarct class doenot accept private access modifier
+
+
+interfae:
+using System;
+
+namespace MyApplication
+{
+  // Interface
+  interface IAnimal 
+  {
+    void animalSound(); // interface method (does not have a body)
+  }
+
+  // Pig "implements" the IAnimal interface
+  class Pig : IAnimal 
+  {
+    public void animalSound() 
+    {
+      // The body of animalSound() is provided here
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Program 
+  {
+    static void Main(string[] args) 
+    {
+      Pig myPig = new Pig();  // Create a Pig object
+      myPig.animalSound();
+    }
+  }
+}
+
+
+To acieve multiple inheritance we use this.......
+
+interface IFirstInterface 
+{
+  void myMethod(); // interface method
+}
+
+interface ISecondInterface 
+{
+  void myOtherMethod(); // interface method
+}
+
+// Implement multiple interfaces
+class DemoClass : IFirstInterface, ISecondInterface 
+{
+  public void myMethod() 
+  {
+    Console.WriteLine("Some text..");
+  }
+  public void myOtherMethod() 
+  {
+    Console.WriteLine("Some other text...");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args)
+  {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
+
+to acive multple inheri Its implementation must be provided by class or struct
+
+here the above is used in my applicatin like generice with crud operation or some other classes ith same implementaion
+
+
+To achieve security - hide certain details and only show the important details of an object.
+
+Struct:
+using System;
+
+struct Books {
+   public string title;
+   public string author;
+   public string subject;
+   public int book_id;
+};  
+
+public class testStructure {
+   public static void Main(string[] args) {
+      Books Book1;   /* Declare Book1 of type Book */
+      Books Book2;   /* Declare Book2 of type Book */
+
+      /* book 1 specification */
+      Book1.title = "C Programming";
+      Book1.author = "Nuha Ali"; 
+      Book1.subject = "C Programming Tutorial";
+      Book1.book_id = 6495407;
+
+      /* book 2 specification */
+      Book2.title = "Telecom Billing";
+      Book2.author = "Zara Ali";
+      Book2.subject =  "Telecom Billing Tutorial";
+      Book2.book_id = 6495700;
+
+      /* print Book1 info */
+      Console.WriteLine( "Book 1 title : {0}", Book1.title);
+      Console.WriteLine("Book 1 author : {0}", Book1.author);
+      Console.WriteLine("Book 1 subject : {0}", Book1.subject);
+      Console.WriteLine("Book 1 book_id :{0}", Book1.book_id);
+
+      /* print Book2 info */
+      Console.WriteLine("Book 2 title : {0}", Book2.title);
+      Console.WriteLine("Book 2 author : {0}", Book2.author);
+      Console.WriteLine("Book 2 subject : {0}", Book2.subject);
+      Console.WriteLine("Book 2 book_id : {0}", Book2.book_id);       
+
+      Console.ReadKey();
+   }
+}
+
+
+Strct vs class
+sing System;
+
+struct Books {
+   private string title;
+   private string author;
+   private string subject;
+   private int book_id;
+   
+   public void getValues(string t, string a, string s, int id) {
+      title = t;
+      author = a;
+      subject = s;
+      book_id = id;
+   }
+   
+   public void display() {
+      Console.WriteLine("Title : {0}", title);
+      Console.WriteLine("Author : {0}", author);
+      Console.WriteLine("Subject : {0}", subject);
+      Console.WriteLine("Book_id :{0}", book_id);
+   }
+};  
+
+public class testStructure {
+
+   public static void Main(string[] args) {
+      Books Book1 = new Books();   /* Declare Book1 of type Book */
+      Books Book2 = new Books();   /* Declare Book2 of type Book */
+
+      /* book 1 specification */
+      Book1.getValues("C Programming",
+      "Nuha Ali", "C Programming Tutorial",6495407);
+
+      /* book 2 specification */
+      Book2.getValues("Telecom Billing",
+      "Zara Ali", "Telecom Billing Tutorial", 6495700);
+
+      /* print Book1 info */
+      Book1.display();
+
+      /* print Book2 info */
+      Book2.display(); 
+
+      Console.ReadKey();
+   }
+}
+
+
+
+By using structt we can not inherit the data 
+
+
+Partila Class:::
+
+EmployeeProps.cs
+public partial class Employee
+{
+    public int EmpId { get; set; }
+    public string Name { get; set; }
+}
+
+EmployeeMethods.cs
+public partial class Employee
+{
+    //constructor
+    public Employee(int id, string name){
+        this.EmpId = id;
+        this.Name = name;
+    }
+
+    public void DisplayEmpInfo() {
+        Console.WriteLine(this.EmpId + " " this.Name);
+    }
+}
+
+
+combination is
+
+public class Employee
+{
+    public int EmpId { get; set; }
+    public string Name { get; set; }
+
+    public Employee(int id, string name){
+        this.EmpId = id;
+        this.Name = name;
+    }
+
+    public void DisplayEmpInfo(){
+        Console.WriteLine(this.EmpId + " " this.Name );
+    }
+}
+
+artial methods must use the partial keyword and must return void.
+Partial methods can have in or ref but not out parameters.
+Partial methods are implicitly private methods, so cannot be virtual.
+Partial methods can be static methods.
+Partial methods can be generic.
+
+
+""""Deligate"'' deligate parameters and methosdparameters are same and also return type also same and at the same time we can create the object for deligate
+using System;
+
+public delegate void MyDelegate(string msg);
+
+public class Program
+{
+	public static void Main()
+	{
+		MyDelegate del = ClassA.MethodA;
+		del("Hello World");
+			
+		del = ClassB.MethodB;
+		del("Hello World");
+		
+		del = (string msg) => Console.WriteLine("Called lambda expression: " + msg);
+		del("Hello World");
+
+	}
+}
+
+public class ClassA
+{
+	public static void MethodA(string message)
+	{
+		Console.WriteLine("Called ClassA.MethodA() with parameter: "+ message);
+	}
+}
+
+public class ClassB
+{
+	public static void MethodB(string message)
+	{
+		Console.WriteLine("Called ClassB.MethodB() with parameter: "+ message);
+	}
+}
