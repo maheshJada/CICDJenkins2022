@@ -1,0 +1,78 @@
+""""""""""""""""""""""""""""""""""""""""""""Api's Layout"""""""""""""""""""""""""""""""
+>>>>Model::>
+
+ 	Login:Username,password
+ 	Signup:Firstname,Lastname,Email,Password,DateOfBirth
+
+  	Employee:Empid,empname,emplocation,date,empcategory,Phonenumber,EmailId
+  	cafetaria::tea,cofee,greentea
+  	Security System manatance::Lights,bulbs,cameras,sensors and rooms
+  	Vistors/venders::Name ,date,location
+  	It:Assertid,assertname,assertdate
+  	Courier_To_the_Company::EmpID,CourierId,EmpLocation
+  	Employee Cabins:Chairs ,Rooms,EmpId,
+
+
+>>>ServicesClass::>
+
+  	 Login/Signup Class:
+   	 Employee
+	 Cafetaria
+	 Security System manatance
+	 Vistors/venders
+	 It
+ 	 Employee Cabins
+	
+
+>>>Controller::>
+
+   	HomeController
+  	EmployeeController
+   	CafetariaController
+   	Security System manatanceController
+   	Vistors/vendersController
+   	ItController
+   	EmployeeCabins_Controller
+
+
+>>>Api's::>
+
+	1.Home/Api/Login
+	2.Home/Api/Signup
+
+	3.Employee/Api/Create
+	4.Employee/Api/Update
+	5.Employee/APi/GetTheData
+
+	6.Cafetaria/Api/InsertTheThings
+	7.Cafetaria/Api/GetTheCountOfTheThings
+	8.Cafetaria/Api/UpdateTheThings
+
+	9.Security_System_manatance/Api/Insert
+	10.Security_System_manatance/Api/Get_The_Data
+	11.Security_System_manatance/Api/Delete_The_Things
+	12.Security_System_manatance/Api/Update_The_Things
+	13.Security_System_manatance/Api/Count_The_Things
+
+	14.Vistors/Api/Insert
+	15.Vistors/Api/Get_The_Data
+	16.Vistors/Api/Update
+
+	17.It/Api/Insert
+	18.It/Api/Update
+	19.It/Api/Delete
+	20.It/Api/Get_The_Data
+
+	21.Courier_To_the_Company/Api/Insert
+	22.Courier_To_the_Company/Api/taking/Get The Employee
+	23.Courier_To_the_Company/Api/search_the_Employee
+	24.Courier_To_the_Company/Api/update_the_Employee_Location
+
+
+	25.Employee_Cabins/Api/InsertChair
+	26.Employee_Cabins/Api/Change_The_Chair
+	27.Employee_Cabins/Api/Remove_The_Chair
+	28.Employee_Cabins/Api/Count_The_Chair
+	29.Employee_Cabins/Api/Count_The_Rooms
+
+

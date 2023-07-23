@@ -1,0 +1,273 @@
+
+
+====================SpMultiTable================================================================================
+---StudentTable
+CREATE TABLE `Sql.student`
+( stu_id int64,
+ stu_name string,
+ course_id string,
+ branch string,
+ lecturer_id string
+);
+
+--couse table
+CREATE TABLE `Sql.course`
+(
+  course_id string,
+  course_name string
+);
+
+--inserting studnet data
+INSERT INTO  `Sql.student` VALUES
+(1901401,'DEVA','CS1003','C.S', 'P4002'),
+(1901402,'HARSH','CS1001','C.S', 'P4001'),
+(1901403,'ABHISHEK','CS1001','C.S', 'P4001'),
+(1901404,'GARVIT','CS1002','C.S', 'P4003'),
+(1901405,'SAMPATH','CS1003','C.S', 'P4002'),
+(1901406,'SATWIK','CS1002','C.S', 'P4003'),
+(1901407,'GUPTA','CS1001','C.S', 'P4001'),
+(1901408,'DAS','CS1003','C.S', 'P4002');
+
+select * from `Sql.student`
+
+--inserting course data
+
+INSERT INTO `Sql.course` VALUES
+('CS1001', 'DBMS'),
+('CS1002', 'O.S'),
+('CS1003', 'C.N'),
+('CS1004', 'M.L'),
+('CS1005', 'A.I');
+
+-- joining 2 tables using inner join
+SELECT *
+FROM `Sql.student` student 
+INNER JOIN  
+`Sql.course` course
+ON  
+student.course_id = course.course_id;
+
+--creating stored procedure using multi tables using inner join
+create procedure Sql.Get()
+begin
+SELECT *
+FROM `Sql.student` student 
+INNER JOIN  
+`Sql.course` course
+ON  
+student.course_id = course.course_id;
+end;
+
+-- call multi table using stored procedure
+call Sql.Get()
+
+--Creating a table valued function
+
+CREATE OR REPLACE TABLE FUNCTION  Sql.GetStudent()
+as  
+SELECT *
+FROM `Sql.student`
+
+--calling table value function
+select * from  Sql.GetStudent()
+
+
+=============aggregate funtions order by sum  etc======================================================================
+
+select * from `bigquery-public-data.google_analytics_sample.ga_sessions_20170801` limit 1000
+
+
+
+select 
+date,
+channelGrouping as channsel,
+totals.visits,
+totals.transactions,
+totals.transactionRevenue,
+from `bigquery-public-data.google_analytics_sample.ga_sessions_20170801` limit 1000
+
+--Filtering big query
+
+select 
+date,
+channelGrouping as channsel,
+totals.visits,
+totals.transactions,
+totals.transactionRevenue,
+from `bigquery-public-data.google_analytics_sample.ga_sessions_20170801` 
+where channelGrouping in('Organic Search','Direct')
+order by transactionRevenue desc
+limit 1000
+
+--aggregrate functions sum , max 
+select 
+date,
+channelGrouping as channel,
+sum(totals.visits) as visits,
+sum(totals.transactions) as transactions,
+sum(totals.transactionRevenue) as revenue
+from `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`
+where channelGrouping in ('Organic Search','Direct')
+group by date,channel
+order by transactions desc
+limit 1000
+
+--using math+case
+
+select
+PARSE_DATE('%Y%m%d', date) as date,
+channelGrouping as channel,
+sum(totals.visits) as visits,
+case when sum(totals.visits)>0
+ then sum(totals.transactions)/sum(totals.visits)
+ else 0 end as conv_rate,
+sum(totals.transactions) as transactions,
+sum(totals.transactionRevenue)/sum(totals.transactions) as avearage,
+sum(totals.transactionRevenue) as revenue
+from `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`
+where channelGrouping in ('Organic Search','Direct')
+group by date,channel
+order by transactions desc
+limit 1000
+
+--aggregate by day, week and month in big query
+PARSE_DATE('%Y%m%d', date) as date,
+
+--joining tables in bigquery sql
+
+SELECT 
+zip.state_code,
+sum(census.population) as population
+FROM `bigquery-public-data.census_bureau_usa.population_by_zip_2010` census
+left join `bigquery-public-data.geo_us_boundaries.zip_codes` zip
+on(
+  census.zipcode=zip.zip_code 
+)
+where census.minimum_age is null
+and census.maximum_age is null
+and census.gender is null
+group by zip.state_code
+order by zip.state_code asc
+
+--With statement in bigquery
+
+with census as (
+ select 
+ zipcode,
+ population
+  from `bigquery-public-data.census_bureau_usa.population_by_zip_2010`
+  where minimum_age is null
+  and maximum_age is null
+  and gender is null
+),
+zip as(
+ select
+ zip_code,
+ state_code
+ from `bigquery-public-data.geo_us_boundaries.zip_codes`  
+)
+
+SELECT 
+zip.state_code,
+sum(census.population) as population
+FROM  census
+left join zip
+on(
+  census.zipcode=zip.zip_code 
+)
+group by zip.state_code
+order by zip.state_code asc
+
+===========Tables=======================================================================================
+
+create table `_Repo.Employee`(eno int,ename string,salary int)
+
+INSERT INTO `bamboo-sweep-365215._Repo.Employee`(eno, ename,salary) VALUES(10645,'Mahesh',84838)
+
+select * from bamboo-sweep-365215._Repo.Employee 
+
+============Table creation===========================================================================
+
+create table `_Repo.Employee`(eno int,ename string,salary int)
+INSERT INTO `bamboo-sweep-365215._Repo.Employee`(eno, ename,salary) VALUES(10645,'Mahesh',84838)
+select * from bamboo-sweep-365215._Repo.Employee 
+
+
+create table `_Repo.Department`(D_id int,D_name string)
+INSERT INTO `bamboo-sweep-365215._Repo.Department`(D_id, D_name) VALUES(45,'EEE')
+select * from bamboo-sweep-365215._Repo.Department 
+
+
+=======================Sp Creation==========================================================================
+
+create procedure _Repo.proc_emp(eno INT64,ename string,sal INT64)
+begin
+insert into  _Repo.Employee values(eno,ename,sal);
+END
+
+call  _Repo.proc_emp(220,'praveen',94874)
+
+
+create procedure _Repo.Get()
+begin
+select * from _Repo.Employee;
+end;
+
+call _Repo.Get()
+
+
+=======================UnNest ==================================================================================
+
+
+SELECT * FROM `bamboo-sweep-365215.Sql.library` LIMIT 1000
+
+--Insert the data
+insert into `bamboo-sweep-365215.Sql.library` (Name,BookDetails,City) values
+(
+  'Ramesh',
+  [
+    struct('Harry Poter' as BookName,'Xyz' as Production,100,50,Current_Date())
+  ],
+
+  'NizamPet'
+)
+
+
+
+insert into `bamboo-sweep-365215.Sql.library` (Name,BookDetails,City) values
+(
+  'Praveen',
+  [
+    struct('The Game' as BookName,'ntr' as Production,400,500,date('2022-10-23')),
+     struct('The Failure' as BookName,'boss' as Production,1000,100,date('2022-10-01'))
+      
+
+  ],
+
+  'NY'
+)
+
+
+---the aboue is normalized way  storing data or nested fields or repeated fiedls
+
+SELECT BookDetails.BookName FROM `bamboo-sweep-365215.Sql.library` LIMIT 1000
+
+--the above gives the error bcz bookname is array of struct --for that we have to use unnest the fiedls
+--unnest() on main fileds like book details
+
+SELECT bd.BookName FROM `bamboo-sweep-365215.Sql.library`, 
+unnest(BookDetails) as bd LIMIT 1000
+
+--it get the book name from all nested repeated filesds
+
+SELECT distinct(bd.BookName) FROM `bamboo-sweep-365215.Sql.library`, 
+unnest(BookDetails) as bd LIMIT 1000
+
+--Whenever u have a child fileds then only you can use unnest
+
+
+==============================================================================
+
+
+
+

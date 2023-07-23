@@ -1,0 +1,124 @@
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""ASP.NETCORE CRUD OPERTION"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+1-->Getting employees list
+2-->Inserting Employee
+3-->Updating employee info
+4-->getting It employees info
+5-->getting Developers info
+6-->getting Testers info
+16-->getting count of Testers, Developers , It team
+
+
+
+
+Freshers Joining:>
+
+17-->insert the new Empoloyee Details Based on What he choose the Location Whether it is hyd or pune
+18-->Send/Insert That Employee Details to all the Lacations
+19-->If Employee Wants to change the location Then Update the Employee Location Details
+20-->If he is work at Hyderabad Waverock 2.3 Serach for Employee wheather he is innominds company or not
+21-->If He Was a Experience Person Update the Role TeamLead to The ProjectManager 
+
+22-->Upload Or insert the Skills And Certification like PluralSight Certificates For Future Purpose
+23-->Based On Skills And Certication Give/Insert The Project To That Employee
+24>
+
+IT ASSERTS:>
+
+25-->Assign the Laptop to the New Employee by taking Properties as AssertId,AssertType,AllocationDate
+26-->Replacement the Laptop to new  one(Update)
+
+..................................................>>
+Courier To the Company::::> like bluedart
+
+>>There are different locations are there for the innominds for suppose if i took one location like Hyderabad
+21-->taking/Get The Employee courier to that Location like (Hyderabad Percepective)
+22-->search the Employee Details in reception whether he is from 2.3 waverock or not
+23-->update the Employee Location when courier is coming on that time he went to pune for 1 month then that company send the courier to the pune location
+24-->if he is changed the location then transfer the courier to that new location kondapur at hyderabad
+
+
+Security System Maintenance::::>
+
+25-->insert the sensors on each doors 
+26-->update/or change the sensors if it's not working properly
+27-->insert the Cameras,ligthts  and fire extinguisher  in every rooms
+28-->update/or change the cameras ,ligths and fire extinguisher if it's not working properly
+29-->count the cameras ,ligths and fire extinguisher in that floor
+
+
+
+Employee Cabins::::>
+
+
+30-->insert the Chairs in every room based on the size of the room 
+31-->change the chair if it is not good
+32-->remove the chairs if  the chairs is more comapred to room capicity
+
+33-->Separete rooms only for Senior Employee so insert that Senior employees deatils  to that Separate rooms
+34-->assign only one chair for every cabin  
+35-->Count the how many rooms in the 4th floor
+36-->Count the chairs and cabins in every room
+
+
+Visitors/Vendors::::>
+
+37-->Insert the New Visitor /vendor details
+38-->update the vistors data 
+39-->Getting the new visitors data
+...........................................>>>
+
+
+
+
+
+15-->get count of number of employees on daywise
+3--> insert number of cups of tea over in a daywise
+4--> insert number of cups of coffee over in a daywise
+5--> insert number of cups of milk over in a daywise
+6--> insert number of cups of greentea packets over in a daywise
+7--> get info about how many cups of tea should put on machine based on average no of tea cups consumed on previouse day and the strength of employees in that day(find count of employees on that day)
+8--> get info about how many cups of tea should put on machine based on previouse day average and the strength of employees in that day
+9--> get info about how many cups of tea should put on machine based on previouse day average and the strength of employees in that day
+10-->get info about how many cups of tea should put on machine based on previouse day average and the strength of employees in that day
+
+
+.......................................................................................................................................
+Class:Comapny
+Courier To the Company
+Freshers
+IT ASSERTS
+Security System Maintenance
+Visitors/Vendors
+
+Classes:2=>Employee Class:EmpId
+			  :EmpName
+		          :EmpLocation
+			  :Date
+			  :Emp Category
+		cafeteria class:Tea Cups
+				:Cofee Cups
+				:GreenTea Packets
+				
+
+controller:2 Employee
+		Cafetaria
+  or else i will use generic for taking one class and one controller by using EntityFramework Core
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+class 
+1.Employee::Empid,empname,emplocation,date,empcategory
+2.cafetaria::tea,cofee,greentea
+3.it::Assertid,assertname,assertdate
+4.Security System manatance::Lights,bulbs,cameras,sensors and rooms
+5.Vistors/vender::Name ,date,location	
+
+
+
+			
+
+
+
+
+
+
